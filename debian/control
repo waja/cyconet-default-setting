@@ -8,7 +8,7 @@ Standards-Version: 4.5.1
 Homepage: https://github.com/waja/cyconet-default-settings
 
 Package: cyconet-default-ubuntu-desktop-settings
-Architecture: all
+Architecture: any
 Depends: ${misc:Depends},
          base-files (>= 10),
          software-properties-common,
