@@ -1,0 +1,7 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: cyconet-default-settings
+Source: https://github.com/waja/cyconet-default-settings
+
+Files: *
+Copyright: Copyright (C) 2021 Jan Wagner <waja@cyconet.org>
+License: GPL-3+

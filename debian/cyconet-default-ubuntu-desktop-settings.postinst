@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -e
+
+case "$1" in
+    configure)
+	# Adding repos via add-apt-repository
+	add-apt-repository -y ppa:s-ramacher/ait > /dev/null
+	add-apt-repository -y ppa:flx/chromium > /dev/null
+        ;;
+
+    *)
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

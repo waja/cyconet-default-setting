@@ -1,0 +1,18 @@
+#!/bin/bash
+
+set -e
+
+case "$1" in
+    purge)
+	# Remove repos via add-apt-repository
+	add-apt-repository -r -y ppa:s-ramacher/ait
+	add-apt-repository -r -y ppa:flx/chromium
+        ;;
+
+    *)
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0
