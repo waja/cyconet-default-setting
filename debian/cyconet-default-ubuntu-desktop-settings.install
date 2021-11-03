@@ -1,1 +1,5 @@
 etc/apt/preferences.d/chromium
+etc/apt/preferences.d/linuxmint
+etc/apt/sources.list.d/mint-uma-focal.list
+etc/apt/sources.list.d/mint-una-focal.list
+etc/update-manager/release-upgrades.d/cyconet-default-setting.cfg
