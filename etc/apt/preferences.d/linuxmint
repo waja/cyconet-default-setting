@@ -2,10 +2,10 @@ Package: *
 Pin: release o=linuxmint
 Pin-Priority: 200
 
-Package: chromium chromium-* chromium-sandbox firefox firefox-*
+Package: chromium chromium-* chromium-sandbox
 Pin: release v=20.2,o=linuxmint
 Pin-Priority: 1001
 
-Package: chromium chromium-* chromium-sandbox firefox firefox-*
+Package: chromium chromium-* chromium-sandbox
 Pin: release v=20.3,o=linuxmint
 Pin-Priority: 1001
