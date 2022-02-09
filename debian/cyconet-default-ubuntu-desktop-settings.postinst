@@ -7,8 +7,12 @@ case "$1" in
         # Add Linux Mint repository key
         apt-key --keyring /etc/apt/trusted.gpg.d/linux_mint.gpg adv --recv-keys --keyserver keyserver.ubuntu.com A6616109451BBBF2 2>1 > /dev/null
 	# Adding repos via add-apt-repository
-	add-apt-repository -y ppa:s-ramacher/ait > /dev/null
-	add-apt-repository -y ppa:flx/chromium > /dev/null
+	add-apt-repository -y ppa:ubuntu-mozilla-security/ppa > /dev/null
+
+	if [ "$2" ] && dpkg --compare-versions "$2" lt "0.9.2"; then
+		add-apt-repository -r -y ppa:s-ramacher/ait
+		add-apt-repository -r -y ppa:flx/chromium
+	fi
         ;;
 
     *)
